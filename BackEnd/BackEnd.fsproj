@@ -8,6 +8,8 @@
 
   <ItemGroup>
     <Compile Include="Handlers/Handlers.fs" />
+    <Compile Include="Handlers/AuthHandler.fs" />
+    <Compile Include="Handlers/BookHandler.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 

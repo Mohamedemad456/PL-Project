@@ -12,3 +12,4 @@ D:\c\Pl-3\BackEnd.Data\obj\Debug\net8.0\refint\BackEnd.Data.dll
 D:\c\Pl-3\BackEnd.Data\obj\Debug\net8.0\BackEnd.Data.pdb
 D:\c\Pl-3\BackEnd.Data\obj\Debug\net8.0\BackEnd.Data.genruntimeconfig.cache
 D:\c\Pl-3\BackEnd.Data\obj\Debug\net8.0\ref\BackEnd.Data.dll
+D:\c\Pl-3\BackEnd.Data\obj\Debug\net8.0\BackEnd.Data.sourcelink.json

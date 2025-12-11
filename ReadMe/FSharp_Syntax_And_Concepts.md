@@ -1,3 +1,5 @@
+<!-- Role: Documentation Lead -->
+<!-- Developer: Omar Salama -->
 # F# Syntax and Concepts Guide
 
 This document explains the F# syntax and functional programming concepts used throughout this project.

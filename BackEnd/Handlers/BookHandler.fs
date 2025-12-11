@@ -1,3 +1,5 @@
+// Role: CRUD Developer (Book Operations) & Search Developer & Borrow/Return Logic Developer
+// Developers: Youssef Amr (CRUD), Alkady (Search), Mohamed Seif (Borrow/Return)
 namespace BackEnd.Handlers
 
 open Microsoft.AspNetCore.Http
@@ -56,6 +58,8 @@ module BookHandler =
                    | _ -> Some book
         }
 
+    // Role: Search Developer
+    // Developer: Alkady
     /// Gets all books with optional search
     let private getAllBooksAsync (db: AppDbContext) (searchTerm: string option) : Task<System.Collections.Generic.List<Book>> =
         task {
@@ -123,6 +127,8 @@ module BookHandler =
                 return Error $"Unexpected error: {ex.Message}"
         }
 
+    // Role: Borrow/Return Logic Developer
+    // Developer: Mohamed Seif
     /// Creates a borrowing record
     let private createBorrowingAsync (db: AppDbContext) (userId: Guid) (bookId: Guid) : Task<Result<Borrowing, string>> =
         task {
@@ -153,6 +159,8 @@ module BookHandler =
                 return Error $"Unexpected error: {ex.Message}. Type: {ex.GetType().Name}"
         }
 
+    // Role: Borrow/Return Logic Developer
+    // Developer: Mohamed Seif
     /// Returns a borrowed book
     let private returnBorrowingAsync (db: AppDbContext) (borrowingId: Guid) (userId: Guid) : Task<Result<Borrowing, string>> =
         task {
@@ -223,6 +231,8 @@ module BookHandler =
     // Handler Functions (Composed from Pure Functions)
     // ============================================
 
+    // Role: Search Developer
+    // Developer: Alkady
     /// Get all books with optional search
     let getBooks (db: AppDbContext) (searchTerm: string option) : Task<IResult> =
         task {
@@ -230,6 +240,8 @@ module BookHandler =
             return Results.Ok(books)
         }
 
+    // Role: CRUD Developer
+    // Developer: Youssef Amr
     /// Get book by ID
     let getBookById (db: AppDbContext) (bookId: Guid) : Task<IResult> =
         task {
@@ -239,6 +251,8 @@ module BookHandler =
                    | Some book -> Results.Ok(book)
         }
 
+    // Role: CRUD Developer
+    // Developer: Youssef Amr
     /// Create a new book
     let createBook (db: AppDbContext) (book: Book) : Task<IResult> =
         task {
@@ -262,6 +276,8 @@ module BookHandler =
                        | Error errorMsg -> Results.Problem(title = "Failed to create book", detail = errorMsg, statusCode = 500)
         }
 
+    // Role: CRUD Developer
+    // Developer: Youssef Amr
     /// Update a book
     let updateBook (db: AppDbContext) (bookId: Guid) (book: Book) : Task<IResult> =
         task {
@@ -291,6 +307,8 @@ module BookHandler =
                            | Error errorMsg -> Results.Problem(title = "Failed to update book", detail = errorMsg, statusCode = 500)
         }
 
+    // Role: CRUD Developer
+    // Developer: Youssef Amr
     /// Delete a book
     let deleteBook (db: AppDbContext) (bookId: Guid) : Task<IResult> =
         task {
@@ -300,6 +318,8 @@ module BookHandler =
                    | Error errorMsg -> Results.NotFound(errorMsg)
         }
 
+    // Role: Borrow/Return Logic Developer
+    // Developer: Mohamed Seif
     /// Borrow a book
     let borrowBook (db: AppDbContext) (bookId: Guid) (userId: Guid) : Task<IResult> =
         task {
@@ -314,6 +334,8 @@ module BookHandler =
                        | Error errorMsg -> Results.Problem(title = "Failed to borrow book", detail = errorMsg, statusCode = 500)
         }
 
+    // Role: Borrow/Return Logic Developer
+    // Developer: Mohamed Seif
     /// Return a borrowed book
     let returnBook (db: AppDbContext) (borrowingId: Guid) (userId: Guid) : Task<IResult> =
         task {

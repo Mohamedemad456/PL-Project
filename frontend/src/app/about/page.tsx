@@ -1,3 +1,5 @@
+// Role: UI Developer
+// Developer: Mohamed Emad
 import { BookOpen, Users, Target, Heart, Sparkles } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 

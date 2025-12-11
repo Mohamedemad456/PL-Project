@@ -1,3 +1,5 @@
+// Role: Authentication & Token Management (Client-side)
+// Developer: Mohamed Emad
 'use client';
 
 /**

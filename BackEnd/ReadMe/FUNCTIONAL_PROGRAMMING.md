@@ -1,3 +1,5 @@
+<!-- Role: Documentation Lead -->
+<!-- Developer: Omar Salama -->
 # F# Functional Programming Concepts Guide
 
 This guide explains the functional programming concepts used in the refactored handlers and how they make your code better.

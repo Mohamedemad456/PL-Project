@@ -1,3 +1,5 @@
+// Role: Borrow/Return Models
+// Developer: Mohamed Emad
 using System.ComponentModel.DataAnnotations;
 
 namespace BackEnd.Data.Models;

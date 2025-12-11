@@ -1,3 +1,5 @@
+// Role: Authentication & Token Management (Server Actions)
+// Developer: Mohamed Emad
 'use server';
 
 import { cookies } from 'next/headers';

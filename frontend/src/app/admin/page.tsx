@@ -1,3 +1,5 @@
+// Role: UI Developer
+// Developer: Mohamed Emad
 'use client';
 
 import { useState, useEffect } from 'react';

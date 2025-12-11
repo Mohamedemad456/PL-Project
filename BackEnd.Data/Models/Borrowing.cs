@@ -1,3 +1,5 @@
+// Role: Borrow/Return Model
+// Developer: Mohamed Emad
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 

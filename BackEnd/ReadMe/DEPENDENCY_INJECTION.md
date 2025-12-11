@@ -1,3 +1,5 @@
+<!-- Role: Documentation Lead -->
+<!-- Developer: Omar Salama -->
 # Dependency Injection Explained
 
 ## Where Does the `db` Object Come From?

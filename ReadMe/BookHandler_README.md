@@ -1,3 +1,5 @@
+<!-- Role: Documentation Lead -->
+<!-- Developer: Omar Salama -->
 # BookHandler.fs - Complete Workflow and Code Explanation
 
 This document explains the `BookHandler.fs` module, which handles all book-related operations including CRUD operations, borrowing, and returning books.

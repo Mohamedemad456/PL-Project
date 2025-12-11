@@ -1,3 +1,5 @@
+<!-- Role: Documentation Lead -->
+<!-- Developer: Omar Salama -->
 # Authentication Setup Guide
 
 ## Overview

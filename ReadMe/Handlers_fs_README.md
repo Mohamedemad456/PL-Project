@@ -1,3 +1,5 @@
+<!-- Role: Documentation Lead -->
+<!-- Developer: Omar Salama -->
 # Handlers.fs - Complete Workflow and Code Explanation
 
 This document explains the `Handlers.fs` module, which provides basic user management operations (CRUD) using functional programming principles.

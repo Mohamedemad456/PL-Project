@@ -1,3 +1,5 @@
+// Role: Authentication & Token Management
+// Developer: Mohamed Emad
 'use server';
 
 import { SignJWT, jwtVerify } from 'jose';

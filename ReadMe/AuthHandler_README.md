@@ -1,3 +1,5 @@
+<!-- Role: Documentation Lead -->
+<!-- Developer: Omar Salama -->
 # AuthHandler.fs - Complete Workflow and Code Explanation
 
 This document explains the `AuthHandler.fs` module, which handles user authentication (registration and login) using functional programming principles.

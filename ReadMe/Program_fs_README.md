@@ -1,3 +1,5 @@
+<!-- Role: Documentation Lead -->
+<!-- Developer: Omar Salama -->
 # Program.fs - Complete Code Explanation
 
 This document explains every block of code in `Program.fs`, the main entry point of our F# web application.

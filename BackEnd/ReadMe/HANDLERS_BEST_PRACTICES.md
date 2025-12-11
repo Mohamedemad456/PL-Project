@@ -1,3 +1,5 @@
+<!-- Role: Documentation Lead -->
+<!-- Developer: Omar Salama -->
 # Handlers Best Practices Guide
 
 ## Current Implementation Analysis

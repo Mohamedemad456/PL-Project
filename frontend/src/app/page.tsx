@@ -1,3 +1,5 @@
+// Role: UI Developer
+// Developer: Mohamed Emad
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { BookOpen, Search, BookCheck, Users, Sparkles, ArrowRight } from 'lucide-react';

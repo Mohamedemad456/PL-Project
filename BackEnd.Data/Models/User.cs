@@ -1,3 +1,5 @@
+// Role: User Model & Authentication
+// Developer: Mohamed Emad
 using System.ComponentModel.DataAnnotations;
 
 namespace BackEnd.Data.Models;

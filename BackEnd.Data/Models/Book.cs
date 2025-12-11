@@ -1,3 +1,5 @@
+// Role: Book Model Developer
+// Developer: Mohamed Emad
 using System.ComponentModel.DataAnnotations;
 
 namespace BackEnd.Data.Models;

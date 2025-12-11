@@ -1,3 +1,5 @@
+<!-- Role: Documentation Lead -->
+<!-- Developer: Omar Salama -->
 # Migration Guide
 
 This guide explains how to create and manage EF Core migrations in the hybrid F#/C# setup.

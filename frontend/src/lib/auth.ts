@@ -1,3 +1,5 @@
+// Role: Authentication & Authorization
+// Developer: Mohamed Emad
 import { cookies } from 'next/headers';
 import { verifyToken } from './token';
 

@@ -1,3 +1,5 @@
+// Role: Authentication & Authorization
+// Developer: Mohamed Emad
 namespace BackEnd.Handlers
 
 open Microsoft.AspNetCore.Http

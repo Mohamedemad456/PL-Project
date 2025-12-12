@@ -1,5 +1,4 @@
-// Role: CRUD Developer (User Operations)
-// Developer: Youssef Amr
+// Developer: Mohamed Emad
 namespace BackEnd.Handlers
 
 open Microsoft.AspNetCore.Http

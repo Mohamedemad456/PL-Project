@@ -53,7 +53,7 @@ module BookHandler =
     // ============================================
 
     /// Finds a book by ID
-    // Developer: Youssef Amr
+    // Developer: Alkady
     let private findBookByIdAsync (db: AppDbContext) (bookId: Guid) : Task<Option<Book>> =
         task {
             let! book = db.Books.FirstOrDefaultAsync(fun b -> b.Id = bookId)

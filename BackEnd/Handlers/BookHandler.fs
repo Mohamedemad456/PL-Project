@@ -19,6 +19,7 @@ module BookHandler =
     // ============================================
 
     /// Validates book creation input
+    // Developer: youssef amr
     let private validateBook (title: string) (author: string) (totalCopies: int) : Result<unit, string> =
         if String.IsNullOrWhiteSpace(title) then Error "Title is required"
         elif String.IsNullOrWhiteSpace(author) then Error "Author is required"
@@ -26,6 +27,7 @@ module BookHandler =
         else Ok ()
 
     /// Checks if user already has an active borrowing for the book
+    // Developer: Mohamed Seif
     let private hasActiveBorrowingAsync (db: AppDbContext) (userId: Guid) (bookId: Guid) : Task<bool> =
         task {
             let query = db.Borrowings.Where(fun b -> 
@@ -37,6 +39,7 @@ module BookHandler =
         }
 
     /// Validates borrowing request
+    // Developer: Mohamed Seif
     let private validateBorrowRequest (book: Book option) (userId: Guid) (hasActiveBorrowing: bool) : Result<unit, string> =
         match book with
         | None -> Error "Book not found"
@@ -50,6 +53,7 @@ module BookHandler =
     // ============================================
 
     /// Finds a book by ID
+    // Developer: Youssef Amr
     let private findBookByIdAsync (db: AppDbContext) (bookId: Guid) : Task<Option<Book>> =
         task {
             let! book = db.Books.FirstOrDefaultAsync(fun b -> b.Id = bookId)
@@ -77,6 +81,7 @@ module BookHandler =
         }
 
     /// Creates a new book
+    // Developer: Alkady
     let private createBookInDbAsync (db: AppDbContext) (book: Book) : Task<Result<Book, string>> =
         task {
             try
@@ -91,6 +96,7 @@ module BookHandler =
         }
 
     /// Updates a book
+    // Developer: Alkady
     let private updateBookInDbAsync (db: AppDbContext) (book: Book) : Task<Result<Book, string>> =
         task {
             try
@@ -110,6 +116,7 @@ module BookHandler =
         }
 
     /// Deletes a book
+    // Developer: Alkady
     let private deleteBookFromDbAsync (db: AppDbContext) (bookId: Guid) : Task<Result<unit, string>> =
         task {
             try
